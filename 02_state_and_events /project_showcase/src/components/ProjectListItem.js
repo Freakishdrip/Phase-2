@@ -1,26 +1,31 @@
-const ProjectListItem = ({ id, about, image, link, name, phase }) => {
+function ProjectListItem({project}){
+  console.log(project)
   return (
-    <li className="card">
-      <figure className="image">
-        <img src={image} alt={name} />
-        <button className="claps">👏{0}</button>
-      </figure>
+      <li className="card">
+          <figure className="image">
+              <img src={project.image} alt={project.name}></img>
+              <button className="claps">👏{0}</button>
+          </figure>
 
-      <section className="details">
-        <h4>{name}</h4>
-        <p>{about}</p>
-        {link ? (
-          <p>
-            <a href={link}>Link</a>
-          </p>
-        ) : null}
-      </section>
+          <section className="details">
+              <h4>{project.name}</h4>
+              <p>{project.about}</p>
+              {
+                  project.link ?
+                   <p>
+                      <a href={project.link}>Link</a>
+                  </p>
+                  : null
+              }
+          </section>
 
-      <footer className="extra">
-        <span className="badge blue">Phase {phase}</span>
-      </footer>
-    </li>
-  );
-};
+          <footer className="extra">
+              <span className="badge blue">Phase {project.phase}</span>
+          </footer>
+
+
+      </li>
+  )
+}
 
 export default ProjectListItem;
