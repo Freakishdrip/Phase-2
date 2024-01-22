@@ -1,4 +1,5 @@
 import ProjectListItem from "./ProjectListItem";
+<<<<<<< HEAD
 import React, {useState} from "react";
 
 function ProjectList({projects}){
@@ -22,6 +23,30 @@ function ProjectList({projects}){
     }
 
 
+=======
+import React, {useState} from "react"
+function ProjectList({projects}){
+    console.log(projects)
+    const [search, setSearch] = useState("")
+
+    const searchResults = projects.filter((project) => {
+      return project.name.toLowerCase().includes(search.toLowerCase())
+    })
+
+    // const searchResults = projects.filter((project) => (
+    //   project.name.toLowerCase().includes(search.toLowerCase())
+    // ))
+
+    const projectListItems = searchResults.map((project) => (
+        <ProjectListItem key={project.id} project={project}/> 
+        // <ProjectListItem key={project.id} name={project.name} about={project.about}/>  
+        // <ProjectListItem key={project.id} {...project}/>      
+    ));
+    function handleSearch(event){
+      setSearch(event.target.value)
+      console.log(search)
+    }
+>>>>>>> 91ed2ab935e293be8535b2a91b43d5bbd7b855e4
     return (
         <section>
             <div className="filter">

@@ -3,10 +3,13 @@ import ProjectForm from "./components/ProjectForm";
 import ProjectList from "./components/ProjectList";
 import {useState} from "react"
 
+
 const App = () => {
   const [projects, setProjects] = useState([])
   const [isDarkMode, setIsDarkMode] = useState(true)
   const [searchQuery, setSearchQuery] = useState("")
+
+  console.log(projects)
 
   function handleClick(){
     fetch("http://localhost:4000/projects")
@@ -24,12 +27,15 @@ const App = () => {
     setSearchQuery(newsearch)
   }
 
+  function onAddProject(newProject){
+    setProjects([...projects, newProject])
+  }
   // const handleSearch = (newvalue) => setSearchQuery(newvalue)
 
-  return (
+  return (npm 
     <div className="App">
       <Header isDarkMode = {isDarkMode} onToggleDarkMode = {onToggleDarkMode}/>
-      <ProjectForm/>
+      <ProjectForm projects = {projects} onAddProject={onAddProject}/>
       <button onClick={handleClick}>Load Projects</button>
       <ProjectList searchQuery = {searchQuery} projects={projects} handleSearch={handleSearch} setProjects = {setProjects}/>
     </div>

@@ -25,7 +25,7 @@
       "image": "https://i.imgur.com/Hz84TA2.png"
     },
     {
-      "id": 11,
+      "id": 4,
       "name": "Yourseum",
       "about": "Find great art",
       "phase": 4,
@@ -33,7 +33,7 @@
       "image": "https://i.imgur.com/yywQCoi.png"
     },
     {
-      "id": 12,
+      "id": 5,
       "name": "Spreddit",
       "about": "A Global Community of Like Minded Humans Socially Distancing ",
       "phase": 4,
@@ -41,7 +41,7 @@
       "image": "https://i.imgur.com/cyZCpWs.png"
     },
     {
-      "id": 13,
+      "id": 6,
       "name": "snackATTACK",
       "about": "It's Time to Discover",
       "phase": 4,
@@ -49,7 +49,7 @@
       "image": "https://i.imgur.com/VTJB4qy.png"
     },
     {
-      "id": 20,
+      "id": 7,
       "name": "YouTravel",
       "about": "YouTube for Travel Videos",
       "phase": 3,
@@ -57,7 +57,7 @@
       "image": "https://i.imgur.com/Y6mlORn.png"
     },
     {
-      "id": 22,
+      "id":8,
       "name": "Breathe",
       "about": "Meditation",
       "phase": 3,
@@ -65,7 +65,7 @@
       "image": "https://i.imgur.com/hAuKx3K.png"
     },
     {
-      "id": 23,
+      "id": 9,
       "name": "HomeStory",
       "about": "A web app for storing info about furniture items you plan on purchasing in the future or simply just want to keep tabs of.",
       "phase": 3,
@@ -73,7 +73,7 @@
       "image": "https://i.imgur.com/il8ft21.png"
     },
     {
-      "id": 24,
+      "id": 10,
       "name": "Locksley To Do",
       "about": "A todo list and calendar app",
       "phase": 4,
@@ -81,7 +81,7 @@
       "image": "https://i.imgur.com/XOnaclL.png"
     },
     {
-      "id": 25,
+      "id": 11,
       "name": "GamesRx",
       "about": "Game info and reviews",
       "phase": 4,

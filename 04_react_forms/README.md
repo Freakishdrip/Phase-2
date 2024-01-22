@@ -171,7 +171,7 @@ function CommentContainer() {
       <section>
         {commentCards}
         <hr />
-        <CommentForm addComment={addComment} />
+        <CommentForm addComment={addComment} comments={comments} setComments={setComments} />
       </section>
     );
   }

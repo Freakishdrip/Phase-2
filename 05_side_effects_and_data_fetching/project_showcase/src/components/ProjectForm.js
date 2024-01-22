@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-const ProjectForm = ({onAddProject}) => {
+const ProjectForm = ({onAddProject,projects}) => {
   const [name, setName] = useState("")
   const [about, setAbout] = useState("")
   const [phase, setPhase] = useState("")
@@ -26,29 +26,28 @@ const ProjectForm = ({onAddProject}) => {
   function handleImage(e){
     setImage(e.target.value)
   }
-  // Dynamic solution
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   about: "",
-  //   phase: "",
-  //   link: "",
-  //   image: ""
-  // })
-
-  // const handleOnChange = (e) => {
-  //   const {name, value} = e.target
-  //   setFormData((formData) => ({...formData, [name] : value}))
-  // }
 
   function handleSubmit(e){
     e.preventDefault()
     const newProject = {
-      name: formData.name,
-      about: formData.about,
-      phase: formData.phase,
-      link: formData.link,
-      image: formData.image
+      id: projects.length+1,
+      name: name,
+      about: about,
+      phase: phase,
+      link: link,
+      image: image
     }
+    // below is how to POST a new object to the database
+    fetch("http://localhost:4000/projects", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify(newProject),
+    })
+    .then((response) => response.json())
+    .then((project) => onAddProject(project))
+
+
+
     onAddProject(newProject)
 
   }

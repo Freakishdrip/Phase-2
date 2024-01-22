@@ -1,6 +1,6 @@
 import ProjectListItem from "./ProjectListItem";
 import React, {useState} from "react"
-const ProjectList = ({ searchQuery, projects, handleSearch, setProjects }) => {
+const ProjectList = ({ searchQuery, projects, handleSearch, setProjects, enterProjectEditMode, onDeleteProject }) => {
 
   // const [searchQuery, setSearchQuery] = useState("")
 
@@ -15,7 +15,16 @@ const ProjectList = ({ searchQuery, projects, handleSearch, setProjects }) => {
 
   const projectListItems = results.map((project) => (
     // <ProjectListItem key={project.id} {...project} />
-    <ProjectListItem key={project.id} id = {project.id} about = {project.about} image ={project.image} link = {project.link} name = {project.name} phase = {project.phase}/>
+    <ProjectListItem key={project.id} 
+    id = {project.id}
+    about = {project.about} 
+    image ={project.image} 
+    link = {project.link}
+    name = {project.name}
+    phase = {project.phase} 
+    enterProjectEditMode={enterProjectEditMode}
+    onDeleteProject={onDeleteProject}
+    />
   ));
 
 
