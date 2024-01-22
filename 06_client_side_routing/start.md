@@ -34,3 +34,5 @@ Client side routing, is a technicque used in single page applications where the 
 
 
 #### 7. Use Navigation
+
+#### 8. React Alternatives
