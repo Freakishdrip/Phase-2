@@ -1,0 +1,84 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "make": "Lamborghini",
+      "model": "Huracán EVO",
+      "year": 2023,
+      "mpg": 15,
+      "image": "https://www.digitaltrends.com/wp-content/uploads/2019/08/2020-lamborghini-huracan-evo-spyder-review-7.jpg?p=1"
+    },
+    {
+      "id": "2",
+      "make": "Porsche",
+      "model": "911 Carrera S",
+      "year": 2023,
+      "mpg": 22,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2023-porsche-911-dakar-fd-152-1674829952.jpg?crop=0.572xw:0.429xh;0.231xw,0.355xh&resize=1200:*"
+    },
+    {
+      "id": "3",
+      "make": "McLaren",
+      "model": "720S",
+      "year": 2023,
+      "mpg": 18,
+      "image": "https://i2.wp.com/www.thesupercarblog.com/wp-content/uploads/2019/12/Violet-McLaren-720S-crash-Los-Angeles.jpg?fit=1280%2C720&ssl=1"
+    },
+    {
+      "id": "4",
+      "make": "Aston Martin",
+      "model": "DBS Superleggera",
+      "year": 2023,
+      "mpg": 19,
+      "image": "https://bluesky-cogcms-prodb.cdn.imgeng.in/media/27444/dbx-super-large.png?width=900"
+    },
+    {
+      "id": "5",
+      "make": "Audi",
+      "model": "R8 V10 Performance",
+      "year": 2023,
+      "mpg": 18,
+      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F06%2Faudi-r8-v10-performance-quattro-german-supercar-open-road-tested-lamborghini-huracan-twitter.jpg?w=1080&cbr=1&q=90&fit=max"
+    },
+    {
+      "id": "6",
+      "make": "Mercedes-AMG",
+      "model": "GT R Pro",
+      "year": 2023,
+      "mpg": 17,
+      "image": "https://cdn.motor1.com/images/mgl/XBB0lV/s1/mercedes-amg-gt-r-pro-by-bstc-performance-front-angle.webp"
+    },
+    {
+      "id": "7",
+      "make": "BMW",
+      "model": "M8 Competition",
+      "year": 2023,
+      "mpg": 20,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-m8-102-649c413018299.jpeg?crop=0.736xw:0.829xh;0.119xw,0.171xh&resize=768:*"
+    },
+    {
+      "id": "8",
+      "make": "Chevrolet",
+      "model": "Corvette C8 Stingray",
+      "year": 2023,
+      "mpg": 29,
+      "image": "https://hips.hearstapps.com/hmg-prod/images/2020-chevrolet-corvette-lead2-1571234772.jpg?crop=0.837xw:0.627xh;0.0577xw,0.219xh&resize=1200:*"
+    },
+    {
+      "id": "9",
+      "make": "Ford",
+      "model": "Mustang Shelby GT500",
+      "year": 2023,
+      "mpg": 20,
+      "image": "https://cdn.motor1.com/images/mgl/qkkQLZ/s1/shelby-gt500-code-red-limited-production-edition.jpg"
+    },
+    {
+      "id": "10",
+      "make": "Ford",
+      "model": "Mustange",
+      "mpg": "69",
+      "year": "1966",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/1966-ford-mustang-front-3-4-1647893512.png"
+    }
+  ]
+}
