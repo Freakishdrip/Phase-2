@@ -21,6 +21,7 @@ function App() {
   const [allCars, setAllCars] = useState([])
   const [bool, setBool] = useState(true)
 
+  const [searchQuery, setSearchQuery] = useState("")
   
   // need a new state for all cars belowe my garage and here i need a get request to adjust that state, problem of page scrolling up was due to rerender from car loader
   useEffect(() => {
@@ -45,6 +46,16 @@ function App() {
       console.log("set to false")
     }
   }
+
+  console.log(searchQuery)
+
+  const results = allCars.filter((car) => (
+    
+    car.make.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    car.model.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    car.year.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    car.mpg.toLowerCase().includes(searchQuery.toLowerCase())
+  ))
 
   function onDelete(id){
     const newCar = allCars.filter((car) => car.id !== id)
@@ -73,7 +84,14 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<NavBar />}>
-        <Route index element={<Home garage={garage} setGarage={setGarage} allCars={allCars} onDelete={onDelete} bool={bool} brokeAlert={brokeAlert}/>}/>
+        <Route index element={
+        <Home garage={garage}
+         setGarage={setGarage} 
+         allCars={results} 
+         onDelete={onDelete} 
+         bool={bool} 
+         brokeAlert={brokeAlert}
+         setSearchQuery={setSearchQuery}/>}/>
         <Route path="/garage" element={<Garage garage={garage} setGarage={setGarage} onRemove={onRemove} allCars={allCars} onAddCar={onAddCar} bool={bool} brokeAlert={brokeAlert}/>}/>
         <Route path="/about" index element={<About />} />
         <Route path="/settings" element={<Settings />}/>
