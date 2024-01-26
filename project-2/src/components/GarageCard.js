@@ -1,11 +1,33 @@
 import React,{ useState }  from 'react'
 
-function GarageCard({garageCar,onRemove,brokeAlert}) {
+function GarageCard({garageCar,onRemove, editObj, setEditObj,setEditing, editing}) {
   console.log("inside garage card")
  
 
     function handleClick(){
       onRemove(garageCar.id)
+      console.log(garageCar)
+    }
+    // function handleChangeCar(){
+    //   const updateCarObj= {
+    //     make: garageCar.make,
+    //     model: garageCar.model,
+    //     year: garageCar.year,
+    //     mpg: garageCar.mpg
+    //   }
+
+    //   fetch(`http://localhost:4000/cars/${garageCar.id}`,{
+    //     method: "PATCH",
+    //     headers: {"Content-Type":"application/json"},
+    //     body: JSON.stringify(updateCarObj),
+    //   })
+    //   .then((resp) => resp.json())
+    //   .then(handleUpdateCar)
+    // }
+    // console.log(editObj)
+    function setEditingAndEditObj(){
+      setEditObj(garageCar)
+      setEditing(!editing)
       console.log(garageCar)
     }
     
@@ -19,6 +41,7 @@ function GarageCard({garageCar,onRemove,brokeAlert}) {
             <h5>Highway Economy: {garageCar.mpg} mpg</h5>
             
             <button onClick={()=>handleClick()}>Remove</button>
+            <button id="editCar" onClick={() => setEditingAndEditObj()}>Edit</button>
 
         </ul>
     </div>

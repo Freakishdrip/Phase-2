@@ -48,11 +48,11 @@ function AddCarForm({setGarage, garage, allCars, onAddCar}) {
     return (
       <div>
          <form className='formClass' onSubmit={handleAddCar}>
-          <input type="text" name="make" placeholder="Make" make={make} onChange={handleMake}/>
-          <input type="text" name="model" placeholder="Model" model={model} onChange={handleModel}/>
-          <input type="text" name="MPG" placeholder="Miles Per Gallon" mpg={mpg} onChange={handleMPG}/>
-          <input type="text" name="year" placeholder="Year" year={year} onChange={handleYear}/>
-          <input type="text" name="image" placeholder="ImageURL" image={image} onChange={handleImage}/>
+          <input type="text" name="make" placeholder="Make" onChange={(e)=>handleMake(e)}/>
+          <input type="text" name="model" placeholder="Model" onChange={(e)=>handleModel(e)}/>
+          <input type="text" name="MPG" placeholder="Miles Per Gallon" onChange={(e)=>handleMPG(e)}/>
+          <input type="text" name="year" placeholder="Year" onChange={(e)=>handleYear(e)}/>
+          <input type="text" name="image" placeholder="ImageURL" onChange={(e)=>handleImage(e)}/>
           <input type="submit" value="Add"/>
         </form>
       </div>

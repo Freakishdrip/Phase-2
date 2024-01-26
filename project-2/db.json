@@ -4,14 +4,14 @@
       "id": "1",
       "make": "Lamborghini",
       "model": "Huracán EVO",
-      "year": "2023",
-      "mpg": "15",
-      "image": "https://www.digitaltrends.com/wp-content/uploads/2019/08/2020-lamborghini-huracan-evo-spyder-review-7.jpg?p=1"
+      "year": "3000",
+      "mpg": "60",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/1966-ford-mustang-front-3-4-1647893512.png"
     },
     {
       "id": "2",
       "make": "Porsche",
-      "model": "911 Carrera S",
+      "model": "911 Carrera SS",
       "year": "2023",
       "mpg": "22",
       "image": "https://hips.hearstapps.com/hmg-prod/images/2023-porsche-911-dakar-fd-152-1674829952.jpg?crop=0.572xw:0.429xh;0.231xw,0.355xh&resize=1200:*"
@@ -74,15 +74,15 @@
     },
     {
       "id": "10",
-      "make": "Ford",
-      "model": "Mustange",
+      "make": "asdfasdf",
+      "model": "EVp",
       "mpg": "69",
-      "year": "1966",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/1966-ford-mustang-front-3-4-1647893512.png"
+      "year": "3000",
+      "image": "https://cdn.motor1.com/images/mgl/XBB0lV/s1/mercedes-amg-gt-r-pro-by-bstc-performance-front-angle.webp"
     },
     {
       "id": "11",
-      "make": "asdf",
+      "make": "Aston Martin",
       "model": "EV",
       "mpg": "69",
       "year": "3000",

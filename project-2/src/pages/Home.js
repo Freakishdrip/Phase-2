@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import CarsList from "../components/CarsList"
-import { useLoaderData, Link } from 'react-router-dom';
+import SearchBar from "../components/SearchBar"
 
 
 
 
-function Home({garage,setGarage,allCars,onDelete,bool, brokeAlert, setSearchQuery}){
+function Home({garage,setGarage,allCars,onDelete,bool, brokeAlert, setSearchQuery,searchQuery}){
 
   
     return (
         <div>
             <h1>Car Cataloge</h1>
-            <form className="formClass">
-                <input type="text" onChange={(e) => setSearchQuery(e.target.value)}placeholder='Search here...'/>
-            </form>
+            <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
             <CarsList  garage={garage} setGarage={setGarage} allCars={allCars} onDelete={onDelete} bool={bool} brokeAlert={brokeAlert}/>
         </div>
     );

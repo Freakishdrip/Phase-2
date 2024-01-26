@@ -3,7 +3,7 @@ import React,{ useState }  from 'react'
 
 function CarsCard({car,setGarage,garage,onDelete,bool, brokeAlert}) {
     
-  function handleClick(){
+  function handleClick(){//delete
     fetch(`http://localhost:4000/cars/${car.id}`, {
       method: "DELETE",
     })
@@ -12,14 +12,14 @@ function CarsCard({car,setGarage,garage,onDelete,bool, brokeAlert}) {
   }
 
 
-  function handleButton(e){
+  function handleButton(e){//buy car
       e.preventDefault()
-      console.log(car)
+      //console.log(car)
       setGarage([...garage, car])//send to garage list
     brokeAlert([garage])
   }
   //brokeAlert(garage)
-  console.log([garage])
+  //console.log([garage])
   return (
     <div>
       <li className="card">
